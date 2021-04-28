@@ -1,16 +1,18 @@
 import React from "react";
+
+import { MyNavBar } from "./navbar.jsx";
+
 import JumbotronBox from "./jumbotronbox.jsx";
-//aqui importar la navbar
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
 
-//create your first component
+
 export function Home() {
 	return (
-		//	<Navbar />
+
+        <MyNavBar />
 		<div className="container">
 			<JumbotronBox />
 		</div>
+
 	);
 }
