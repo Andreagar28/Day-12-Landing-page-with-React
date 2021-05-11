@@ -5,12 +5,12 @@ import PropTypes from "prop-types";
 
 const CardBox = props => {
 	return (
-		<Card style={{ width: "18rem" }}>
+		<Card>
 			<Card.Img variant="top" src={props.source} />
-			<Card.Body>
+			<Card.Body className="d-flex column flex-wrap align-items-end">
 				<Card.Title>{props.title}</Card.Title>
 				<Card.Text>{props.text}</Card.Text>
-				<Button variant="primary">Button</Button>
+				<Button variant="success">Button</Button>
 			</Card.Body>
 		</Card>
 	);
@@ -18,5 +18,7 @@ const CardBox = props => {
 export default CardBox;
 
 CardBox.propTypes = {
-	title: PropTypes.string
+	title: PropTypes.string,
+	source: PropTypes.string,
+	text: PropTypes.string
 };
